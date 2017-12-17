@@ -77,7 +77,7 @@ let s:regex["trait"] = '^\(\s*\)trait\s\+\(\S\+\)\s*{\?\s*$'
 
 let s:regex["types"] = {}
 
-let s:regex["types"]["array"]  = "^array *(.*"
+let s:regex["types"]["array"]  = '^\(array\s*(.*\|[.*\)'
 let s:regex["types"]["float"]  = '^[0-9]*\.[0-9]\+'
 let s:regex["types"]["int"]    = '^[0-9]\+'
 let s:regex["types"]["string"] = "['\"].*"
